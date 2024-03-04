@@ -8,5 +8,8 @@ import Menu from "./menu/Menu";
 import Payment from "./payment/Payment";
 import Register from './registration/Register';
 import SingleItem from './single-item/SingleItem';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export { About, Blog, Cart, Checkout, Contact, RootSection, Menu, Payment, Register, SingleItem };
